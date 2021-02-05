@@ -33,42 +33,27 @@ $ coral-cli plugins:link .
 # Commands
 
 <!-- commands -->
-* [`oclif-example active-stream`](#oclif-example-active-stream)
-
-## `oclif-example active-stream`
-
-create a comment
-
-```
-USAGE
-  $ oclif-example active-stream
-
-OPTIONS
-  -d, --domain=domain  (required) domain for tenant to run command against
-  --file=file          (required) a file with text
-  --interval=interval  Interval for posting comments
-  --storyID=storyID    (required) the ID of the story to add a comment to
-```
-
-_See code: [src/commands/active-stream.ts](https://github.com/voxmedia/coral-cli-plugin-simulate-activity/blob/v0.0.0/src/commands/active-stream.ts)_
-<!-- commandsstop -->
-
-- [`coral-cli active-stream`](#coral-cli-active-stream)
+* [`coral-cli active-stream`](#coral-cli-active-stream)
 
 ## `coral-cli active-stream`
 
-simulates commenter activity by inserting one line from a specified file every n milliseconds.
+simulate activity by posting a comment every n milliseconds
 
 ```
 USAGE
   $ coral-cli active-stream
 
 OPTIONS
-  -d, --domain=domain  (required) domain to create the tenant for
-  --storyID (required) story to insert comments for
-  --file (required) file to read text from (text will be split on line breaks)
-  --interval (optional) interval in ms at which to post comments (default is 5000)
+  -d, --domain=domain      (required) domain for tenant to run command against
+  -f, --file=file          (required) a file with text
+  -i, --interval=interval  Interval for posting comments
+  -s, --storyID=storyID    (required) the ID of the story to add a comment to
 ```
+
+_See code: [src/commands/active-stream.ts](https://github.com/voxmedia/coral-cli-plugin-simulate-activity/blob/v0.0.0/src/commands/active-stream.ts)_
+<!-- commandsstop -->
+
+- [`coral-cli active-stream`](#coral-cli-active-stream)
 
 # Contributing
 

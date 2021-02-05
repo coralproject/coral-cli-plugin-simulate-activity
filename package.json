@@ -40,7 +40,7 @@
   "license": "MIT",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "oclif-example",
+    "bin": "coral-cli",
     "devPlugins": [
       "@oclif/plugin-help"
     ]

@@ -27,20 +27,24 @@ export const CreateCommentMutation = /* GraphQL */ `
 `;
 
 export default class CommentCreate extends Command {
-  public static description = "create a comment";
+  public static description =
+    "simulate activity by posting a comment every n milliseconds";
 
   public static flags = {
     domain: flags.domain({ required: true }),
     storyID: flags.string({
+      char: "s",
       required: true,
       description: "the ID of the story to add a comment to"
     }),
     file: flags.string({
       required: true,
+      char: "f",
       description: "a file with text"
     }),
     interval: flags.integer({
       required: false,
+      char: "i",
       description: "Interval for posting comments"
     })
   };
