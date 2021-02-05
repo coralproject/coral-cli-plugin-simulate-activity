@@ -1,7 +1,4 @@
-coral-cli-plugin-simulate-activity
-==================================
-
-
+# coral-cli-plugin-simulate-activity
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/coral-cli-plugin-simulate-activity.svg)](https://npmjs.org/package/coral-cli-plugin-simulate-activity)
@@ -9,44 +6,31 @@ coral-cli-plugin-simulate-activity
 [![License](https://img.shields.io/npm/l/coral-cli-plugin-simulate-activity.svg)](https://github.com/voxmedia/coral-cli-plugin-simulate-activity/blob/master/package.json)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
+
+- [Usage](#usage)
+- [Commands](#commands)
+  <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
-$ npm install -g coral-cli-plugin-simulate-activity
-$ oclif-example COMMAND
-running command...
-$ oclif-example (-v|--version|version)
-coral-cli-plugin-simulate-activity/0.0.0 darwin-x64 node-v12.16.2
-$ oclif-example --help [COMMAND]
-USAGE
-  $ oclif-example COMMAND
-...
-```
-<!-- usagestop -->
+$ ./bin/run active-stream --storyID=<storyID> --domain=<domain> --file=<file-with-text>
+
 # Commands
 <!-- commands -->
-* [`oclif-example hello [FILE]`](#oclif-example-hello-file)
-
-## `oclif-example hello [FILE]`
+## `./bin/run active-stream`
 
 describe the command here
 
 ```
+
 USAGE
-  $ oclif-example hello [FILE]
+\$ ./bin/run active-stream --storyID=<storyID> --domain=<domain> --file=<file-with-text>
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-
-EXAMPLE
-  $ oclif-example hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/voxmedia/coral-cli-plugin-simulate-activity/blob/v0.0.0/src/commands/hello.ts)_
-<!-- commandsstop -->
+--storyID id of story
+--domain tenant domain
+--file path to file containing text to split into comments
+--interval optional interval in ms at which to post comments (default 5000)
